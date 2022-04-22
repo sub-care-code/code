@@ -1,0 +1,29 @@
+@use "../global" as *;
+
+.articles_area {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.archive-news__title {
+  font-size: 2rem;
+  color: $color-orange;
+}
+.articles_wrap {
+  border: 1px solid $color-green;
+}
+
+.articles_thumbnail {
+  img {
+    width: 100%;
+  }
+}
+.articles_meta {
+  font-size: 1rem;
+  color: $color-gray;
+  text-align: center;
+}
+.articles_post-title {
+  padding: 1rem;
+}

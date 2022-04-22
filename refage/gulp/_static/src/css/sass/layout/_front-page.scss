@@ -1,0 +1,227 @@
+@use "../global" as *;
+
+.fv {
+  position: relative;
+  background-image: url("img/fv.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 70px);
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  &__bottom {
+    text-align: center;
+    font-size: 2rem;
+    color: $color-white;
+    text-shadow: $text_shadow;
+    padding: 1rem;
+    background-image: linear-gradient(
+      60deg,
+      $color-green 0%,
+      $color-sub-orange 100%
+    );
+  }
+  .site {
+    &-tiltle {
+      font-size: clamp(4.4rem, pxvw(100), 10rem);
+      color: $color-white;
+    }
+    &-lead {
+      font-size: clamp(2.2rem, pxvw(30), 6rem);
+      text-align: center;
+      color: $color-white;
+    }
+  }
+}
+/*
+** flexレイアウトの基本
+*/
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  gap: 20px;
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+/*
+** About-leadのレイアウト
+*/
+.about-lead {
+  position: relative;
+  &::after {
+    @include l-bg-image;
+  }
+  &__area {
+    flex-basis: 52%;
+  }
+  &__img {
+    background-image: url("img/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 44%;
+    min-height: 400px;
+    box-shadow: 15px 15px 0 $color-orange;
+  }
+  &__text {
+    padding: 2rem 0;
+  }
+}
+
+/*
+** menuのレイアウト
+*/
+.menu {
+  @include bottom-auto;
+}
+.l-menu {
+  &__thumbnail {
+    position: relative;
+    width: 100%;
+    padding-top: percentage(225 / 320);
+    aspect-ratio: 320 /225;
+    overflow: hidden;
+    img {
+      @include cover-image;
+    }
+  }
+  &__lead {
+    padding: 1vw;
+    margin-bottom: 0.6rem;
+    box-shadow: 5px 0 10px #ccc;
+    text-align: center;
+  }
+  &__title {
+    font-size: clamp(1.4rem, pxvw(20), 2.4rem);
+    font-weight: bold;
+    text-shadow: 5px 0 10px #ccc;
+  }
+  &__text {
+    color: $color-green;
+  }
+}
+
+/*
+** contactのレイアウト
+*/
+
+.contact {
+  position: relative;
+  background-color: rgba(97, 195, 89, 0.1);
+  padding-bottom: 5rem;
+
+  &::after {
+    @include l-bg-image;
+    transform: rotate(180deg);
+  }
+  &__wrap {
+    @include page-inner;
+    padding-bottom: 6rem;
+  }
+  &__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+    background-color: #fff;
+    box-shadow: 15px 15px 0 $color-orange;
+    padding: 1vw;
+  }
+  &__ask {
+    margin-bottom: 2rem;
+  }
+}
+
+/*
+** 営業日の表のレイアウト
+** 
+*/
+.contact__day {
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: scroll;
+}
+.sales {
+  border-collapse: collapse;
+  max-width: 700px;
+  width: 100%;
+  overflow-x: scroll;
+  &__lead {
+    position: relative;
+    left: -25%;
+    display: none;
+    @include mq(sm) {
+      display: block;
+    }
+  }
+
+  &__tit,
+  &__date {
+    padding: 1.2rem 2rem;
+    text-align: center;
+    border: 2px solid $color-orange;
+  }
+  &__tit {
+    background-color: $color-sub-orange;
+  }
+  &__date {
+    background-color: $color-white;
+  }
+}
+
+/*
+**お知らせのレイアウト
+*/
+
+.info {
+  &__area {
+    max-width: $page-width;
+    width: 80vw;
+    min-width: 300px;
+    @include marginx-auto;
+    @include bottom-auto;
+    background-color: $color-white;
+    border-radius: 4px;
+    box-shadow: $box_shadow;
+    @include mq(sm) {
+      width: 100%;
+    }
+  }
+  &__wrap {
+    padding: 4vw 8vw;
+  }
+  &__link {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    color: $color-gray;
+    @include mq(sm) {
+      flex-direction: column;
+    }
+    &:hover {
+      background-color: $color-sub-orange;
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+  }
+  &__tit {
+    flex-basis: 30%;
+    border-bottom: 1px solid $color-green;
+    padding: 1.6rem;
+    @include mq(sm) {
+      border-bottom-color: $color-sub-orange;
+    }
+  }
+  &__date {
+    flex-basis: 70%;
+    border-bottom: 1px solid $color-green;
+    padding: 1.6rem;
+  }
+}

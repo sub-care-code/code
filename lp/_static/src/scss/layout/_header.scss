@@ -1,0 +1,156 @@
+@use "../global" as *;
+
+.header {
+  padding-top: rem(25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+** グローバルナビのレイアウト
+*/
+
+.g-nav {
+  margin-left: rem(30);
+  font-family: $font-family-bold;
+}
+.g-nav__list {
+  @include mq(sm, min) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.g-nav__item {
+  position: relative;
+  font-size: rem(18);
+  @include mq(sm, min) {
+  }
+  &:nth-child(2) {
+    margin-left: rem(-2);
+  }
+  &:nth-child(3) {
+    margin-left: rem(-3);
+  }
+  &:nth-child(4) {
+    margin-left: rem(-3);
+  }
+}
+.g-nav__item--link {
+  color: #fff;
+  display: block;
+  letter-spacing: 0.01em;
+  padding: rem(1) rem(19);
+  &:hover {
+    &::before {
+      position: absolute;
+      bottom: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      width: 68%;
+      height: 2px;
+      background-color: #e5ba58;
+    }
+  }
+}
+
+/*
+** グローバルメニュー下層
+*/
+
+.g-nav__list--child {
+  display: none;
+  @include mq(sm, min) {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 56px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+  }
+}
+/*
+** hoverでメニューを表示
+*/
+.g-nav__item--child {
+  position: relative;
+  background-color: #fff;
+  margin-bottom: rem(2);
+  width: 280px;
+  height: 60px;
+  transition: 0.3s;
+  &:hover {
+    background-color: #e5ba58;
+    &::before {
+      border-color: #fff;
+    }
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #e5ba58;
+    border-right: 2px solid #e5ba58;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  a {
+    color: #e5ba58;
+    display: block;
+    line-height: 60px;
+    padding-left: rem(34);
+    letter-spacing: 0.01em;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+.g-nav__item:hover > .g-nav__list--child,
+.g-nav__item:active > .g-nav__list--child {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+/*
+** ヘッダー英語
+*/
+.langage {
+  position: relative;
+  background-color: rgba(229, 186, 88, 0.8);
+  border-radius: 20px 0 0 20px;
+  &::after {
+    content: "";
+    width: rem(6);
+    height: rem(6);
+    position: absolute;
+    display: block;
+    right: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 7px solid #fff;
+  }
+
+  a {
+    display: inline-block;
+    color: #fff;
+    font-family: $font-family-bold;
+    padding: 0 rem(44) 0 rem(24);
+    line-height: 45px;
+    letter-spacing: 0.01em;
+  }
+}

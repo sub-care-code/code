@@ -1,0 +1,19 @@
+@use "../global" as *;
+
+.footer {
+  background-color: #000000;
+  display: grid;
+  place-items: center;
+  padding: rem(36) 0;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-family: $font-family-bold;
+  small {
+    @include mq(sm, min) {
+      font-size: rem(16);
+    }
+  }
+}

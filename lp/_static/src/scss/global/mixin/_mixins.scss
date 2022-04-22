@@ -1,0 +1,39 @@
+@use "../setting" as *;
+//画像のアスペクト比の調整
+@mixin cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+// グラデーションの設定
+@mixin bg-color {
+  background: linear-gradient(
+    30deg,
+    rgba(146, 199, 60, 0.7) 0%,
+    rgba(139, 210, 255, 0.7) 100%
+  );
+}
+@mixin bg-color02 {
+  background: linear-gradient(
+    30deg,
+    rgba(146, 199, 60, 1) 0%,
+    rgba(139, 210, 255, 1) 100%
+  );
+}
+
+@mixin fg-color {
+  background: linear-gradient(
+    30deg,
+    rgba(146, 199, 60, 1) 0%,
+    rgba(139, 210, 255, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}

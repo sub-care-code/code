@@ -1,0 +1,12 @@
+@use "../global" as *;
+
+.access-top {
+  position: relative;
+  width: 100%;
+  padding-top: percentage(2 /3);
+  box-shadow: $box_shadow;
+
+  iframe {
+    @include cover-image;
+  }
+}

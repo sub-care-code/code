@@ -1,0 +1,42 @@
+@use "../global" as *;
+
+.post-navigation {
+  max-width: $content-width;
+  @include marginx-auto;
+  width: 100%;
+  font-size: 0.8em;
+  .nav-links {
+    //page-navigation設定
+    display: table;
+    margin: 0 auto;
+    color: $color-white;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    table-layout: fixed; /*中の要素の幅を均等に*/
+    border-spacing: 10px;
+    word-break: break-all;
+    a {
+      cursor: pointer;
+      display: block;
+      text-align: center;
+      padding: 1rem 2rem;
+      &:hover {
+        color: $color-orange;
+        transition: 0.3s;
+      }
+    }
+
+    .nav-previous,
+    .nav-next {
+      display: table-cell;
+      background-color: $color-orange;
+      border-radius: 10px;
+      border: 1px solid $color-gray;
+      &:hover {
+        background-color: $color-white;
+        transition: 0.3s;
+      }
+    }
+  }
+}

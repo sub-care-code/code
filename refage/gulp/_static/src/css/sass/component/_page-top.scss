@@ -1,0 +1,56 @@
+@use "../global" as *;
+
+#page-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+  opacity: 0;
+
+  //上に上がる動き
+  &.upMove {
+    animation: upMove 0.5s forwards;
+
+    @keyframes upMove {
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  //下に下がる動き
+  &.downMove {
+    animation: downMove 0.5s forwards;
+
+    @keyframes downMove {
+      from {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      to {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-orange;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 0.3s;
+  }
+}

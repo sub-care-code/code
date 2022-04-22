@@ -1,0 +1,43 @@
+// 変数のcode
+
+/*
+** カラー
+*/
+$color-green: #61c359;
+$color-orange: #fcaa00;
+$color-gray: #767676;
+$color-sub-orange: #feeabc;
+$color-white: #ffffff;
+
+/*
+** フォント
+*/
+/*
+**バックグラウンドカラー
+*/
+$bg-color: #ffffff;
+
+/*
+** ボックスシャドー
+*/
+$box_shadow: 2px 2px 4px $color-gray;
+
+/*
+** テキストシャドー
+*/
+$text_shadow: 2px 2px 4px $color-gray;
+
+/* コンテンツ・ページ幅 */
+$page-width: 1440px;
+$content-width: 968px;
+
+// px2vw
+//pxをvwに変換
+$viewport: 1240;
+@function pxvw($px) {
+  @return (($px / $viewport) * 100) + vw;
+}
+@function vw($pixel) {
+  $viewport: 420; // 基準となるビューポート
+  @return ($pixel / $viewport * 100) + vw;
+}

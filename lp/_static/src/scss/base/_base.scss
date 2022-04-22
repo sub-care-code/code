@@ -1,0 +1,18 @@
+@use "../global" as *;
+
+body {
+  font-family: $font-family;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.page-width {
+  max-width: 1200px;
+  @include marginx-auto;
+}
+
+.content-width {
+  @include marginx-auto;
+  max-width: 1100px;
+}

@@ -1,0 +1,367 @@
+@use "../global" as *;
+/*
+** 共通レイアウト
+*/
+.section__title,
+.mv__title,
+.mv-content__sub-title,
+.bottom__text,
+.project-ex__index,
+.contact__title,
+.contact-description,
+.contact-mail__link,
+.contact-tel__link {
+  font-family: $font-family-bold;
+}
+
+.section__title {
+  font-size: rem(30);
+  text-align: center;
+  position: relative;
+  @include mq(sm, min) {
+    font-size: rem(50);
+  }
+  &::after {
+    position: absolute;
+    bottom: rem(-42);
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 2em;
+    height: 7px;
+    display: inline-block;
+    @include bg-color;
+  }
+  &--color {
+    @include fg-color;
+  }
+}
+.section__subtitle {
+  text-align: center;
+  font-size: rem(24);
+  color: #e2e2e2;
+  padding-top: rem(90);
+  letter-spacing: 0.025em;
+  font-family: $font-family-en;
+}
+
+.main__wrap {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  @include mq(sm, min) {
+    padding: 0;
+  }
+}
+
+/*
+** fvのレイアウト
+** グリーンオーシャンプロジェクト部分
+*/
+
+.fv {
+  position: relative;
+  @include bg-color02;
+  height: 551px;
+  max-height: 100%;
+  z-index: -1;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: auto;
+    background-image: url("../images/fv_msk.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+  }
+}
+
+.fv__wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -29%);
+  z-index: 1;
+}
+
+.fv__title {
+  max-width: 100%;
+  width: 340px;
+  height: auto;
+  @include mq(sm, min) {
+    width: 1100px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+/*
+** mvのレイアウト
+** グリーンオーシャンプロジェクトとはコンテンツ
+*/
+.mv {
+  padding-top: rem(30);
+}
+.mv__title {
+  font-size: rem(24);
+  text-align: center;
+  padding-top: rem(55);
+  @include fg-color;
+  display: block;
+  @include mq(sm, min) {
+    font-size: rem(50);
+  }
+}
+
+.mv-content__sub-title {
+  font-size: rem(20);
+  @include fg-color;
+  display: block;
+  @include mq(sm, min) {
+    font-size: rem(30);
+  }
+  &--bottom {
+    padding-top: rem(90);
+  }
+}
+
+.mv-contents {
+  @include mq(sm, min) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(138);
+  }
+}
+.mv-content {
+  flex-basis: 55%;
+}
+.mv-content__img {
+  max-width: 100%;
+  width: 458px;
+  padding-top: rem(8);
+  img {
+    width: 100%;
+  }
+}
+.mv-contnet__description {
+  padding-top: rem(26);
+  &--bottom {
+    padding-top: rem(36);
+  }
+}
+.mv-content__text {
+  line-height: 1.66;
+  &--bottom {
+    font-size: rem(12);
+    padding-top: rem(24);
+  }
+  &--bottom02 {
+    padding-top: rem(12);
+  }
+}
+
+.bottom__text {
+  padding-top: rem(125);
+  color: #e2e2e2;
+  text-align: center;
+  @include mq(sm, min) {
+    font-size: rem(80);
+  }
+}
+
+/*
+** ひろしま環境ビジネス推進協議会のレイアウト
+*/
+
+.busines {
+  padding-top: rem(119);
+}
+.busines-description {
+  padding-top: rem(62);
+  line-height: 1.68;
+}
+
+.busines-description__text {
+  // 概要をw6にする
+  &--top {
+    font-family: $font-family-bold;
+  }
+  &--bottom {
+    padding-top: rem(27);
+  }
+}
+.join-btn {
+  width: 100%;
+  padding-top: rem(97);
+  @include marginx-auto;
+  @include mq(sm, min) {
+    width: rem(600);
+    height: rem(100);
+  }
+}
+
+/*
+** 事業内容のレイアウト
+*/
+
+.project {
+  padding-top: rem(231);
+}
+
+.project__list {
+  @include mq(sm, min) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: rem(2);
+  }
+}
+
+.project__title {
+  margin-bottom: rem(15);
+}
+.project-contents {
+  padding-top: rem(100);
+}
+.project__img {
+  padding-top: rem(54);
+  padding-left: rem(33);
+  margin-bottom: rem(147);
+  img {
+    width: 100%;
+  }
+}
+
+.project-content {
+  padding-top: rem(30);
+  padding-bottom: rem(56);
+  background: linear-gradient(
+    30deg,
+    rgba(146, 199, 60, 0.7) 0%,
+    rgba(139, 210, 255, 0.7) 100%
+  );
+}
+.project-content__wrap {
+  @include mq(sm, min) {
+    display: flex;
+    justify-content: center;
+    column-gap: rem(50);
+    padding-top: rem(20);
+  }
+}
+.project-ex {
+  flex-basis: 50%;
+  background-color: rgba($color: #fff, $alpha: 0.7);
+  padding: rem(8) rem(12) 0 rem(10);
+}
+
+.project-ex__index {
+  font-size: rem(26);
+  text-align: center;
+  padding-top: rem(17);
+  padding-left: rem(6);
+  @include fg-color;
+  display: block;
+}
+
+.project-ex__list {
+  padding-top: rem(18);
+  padding-left: rem(12);
+}
+.project-ex__item {
+  &--top {
+    font-family: $font-family-bold;
+  }
+}
+
+.project-ex__text {
+  line-height: 1.7;
+  margin-bottom: rem(25);
+}
+
+/*
+** contactのレイアウト
+*/
+.contact {
+  padding-top: rem(39);
+  margin-bottom: rem(39);
+}
+.contact__title {
+  font-size: rem(40);
+  text-align: center;
+  &--color {
+    @include fg-color;
+  }
+}
+.contact-description {
+  text-align: center;
+  padding-top: rem(34);
+}
+.contact-description__text {
+  margin-left: rem(-6);
+  &--middle {
+    margin-top: rem(2);
+  }
+  &--bottom {
+    margin-left: rem(-7);
+  }
+}
+
+.contact-btn__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: rem(50);
+  padding-top: rem(56);
+}
+
+.contact__btn {
+  @include bg-color02;
+  width: 100%;
+  height: auto;
+  @include mq(sm, min) {
+    width: 525px;
+    height: auto;
+  }
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+}
+.contact-mail__link,
+.contact-tel__link {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding-top: rem(45);
+  padding-bottom: rem(39);
+  @include mq(sm, min) {
+    font-size: rem(28);
+  }
+}
+.contact-tel__top,
+.contact-mail__top {
+  display: block;
+  font-size: rem(16);
+}
+
+.contact-tel__top {
+  margin-left: rem(-11);
+  padding-top: rem(3);
+  padding-bottom: rem(8);
+}
+.contact-mail__top {
+  padding-bottom: rem(8);
+}
+
+.contact-tel__bottom {
+  margin-left: rem(-14);
+}
+.contact-mail__bottom {
+  margin-left: rem(2);
+}

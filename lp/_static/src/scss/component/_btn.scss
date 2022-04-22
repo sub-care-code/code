@@ -1,0 +1,39 @@
+@use "../global" as *;
+
+.btn {
+  position: relative;
+  display: block;
+  text-align: center;
+  line-height: rem(100);
+  background: linear-gradient(
+    30deg,
+    rgba(146, 199, 60, 1) 0%,
+    rgba(139, 210, 255, 1) 100%
+  );
+  font-family: $font-family-bold;
+  font-size: rem(30);
+  color: #fff;
+  padding-left: rem(38);
+  &::before {
+    position: absolute;
+    content: "";
+    width: rem(6);
+    height: rem(6);
+    position: absolute;
+    display: block;
+    left: 32%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 9px solid #fff;
+    @include mq(sm) {
+      left: 20%;
+    }
+  }
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,50 @@
+@use "../global" as *;
+
+body {
+  background: $bg-color;
+  font-family: "Noto Serif JP", serif;
+  color: #555;
+  font-size: 1.6rem;
+  line-height: 1.85;
+  word-wrap: break-word;
+  letter-spacing: 0.2em;
+  @include marginx-auto;
+}
+
+//ページ幅
+.page-width {
+  max-width: $page-width;
+  @include marginx-auto;
+}
+.page-inner {
+  @include page-inner;
+}
+
+.site-tiltle,
+.section-title {
+  font-family: "Parisienne", cursive;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: clamp(4rem, pxvw(60), 7rem);
+  color: $color-green;
+  @include top-auto;
+  &__wrap {
+    position: relative;
+  }
+  &__bg {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(3.2rem, pxvw(70), 7rem);
+    opacity: 0.08;
+    user-select: none;
+  }
+}
+.sub-title {
+  font-size: clamp(2.4rem, pxvw(24), 3rem);
+  font-weight: bold;
+}

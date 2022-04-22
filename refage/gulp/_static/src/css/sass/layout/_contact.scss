@@ -1,0 +1,63 @@
+@use "../global" as *;
+
+/*Snow Monkey Forms*/
+.snow-monkey-form {
+  background-color: $color-white;
+  box-shadow: $box_shadow;
+  padding: 5vw;
+  @include mq(sm) {
+    padding: 5vw 0;
+  }
+}
+
+/*フォームの色などの設定*/
+.smf-form .smf-item .smf-text-control__control,
+.smf-form .smf-item .smf-textarea-control__control {
+  border-radius: 0;
+  border: 1px solid $color-gray;
+}
+
+/*フォームのhover時の設定*/
+.smf-form .smf-item .smf-text-control__control:hover,
+.smf-form .smf-item .smf-textarea-control__control:hover {
+  border-bottom: 1px solid $color-orange;
+  background-color: rgba(26, 64, 95, 0.2);
+}
+
+/*active時の設定*/
+.smf-form .smf-item .smf-text-control__control:active,
+.smf-form .smf-item .smf-text-control__control:focus,
+.smf-form .smf-item .smf-text-control__control:focus-within,
+.smf-form .smf-item .smf-text-control__control[aria-selected="true"],
+.smf-form .smf-item .smf-textarea-control__control:active,
+.smf-form .smf-item .smf-textarea-control__control:focus,
+.smf-form .smf-item .smf-textarea-control__control:focus-within,
+.smf-form .smf-item .smf-textarea-control__control[aria-selected="true"] {
+  border: 1px solid $color-sub-orange;
+}
+
+/*ボタンの設定*/
+.smf-action .smf-button-control__control {
+  background-color: $color-orange;
+  background-image: none;
+  border: 1px solid $color-gray;
+  color: $color-white;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 1rem 4rem;
+  border-radius: 8px;
+  &:hover {
+    color: $color-orange;
+    background-color: $color-white;
+    transition: 0.3s;
+  }
+}
+/* ラジオボタンの配置設定 */
+.smf-form .smf-item .smf-radio-button-control {
+  align-items: center;
+}
+
+/* 必須項目の文字色を目立たせる */
+.smf-item__description {
+  color: $color-orange;
+}

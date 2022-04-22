@@ -1,0 +1,45 @@
+@use "../global" as *;
+
+.search {
+  &__title {
+    font-size: clamp(2.4rem, pxvw(24), 3rem);
+    @include bottom-auto;
+  }
+  &__wrap {
+    max-width: $content-width;
+    @include marginx-auto;
+    @include mq(sm) {
+      padding: 2vw;
+    }
+  }
+  &__index {
+    @include marginx-auto;
+    border: 1px solid $color-gray;
+    padding: 2vw;
+    @include bottom-auto;
+    .meta {
+      text-align: center;
+      color: $color-green;
+    }
+    .entry-cat {
+      text-align: center;
+    }
+  }
+  &-post__title {
+    font-size: clamp(2.4rem, pxvw(24), 3rem);
+    text-align: center;
+  }
+}
+.articles_index_thumbnail {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: percentage(9 /16);
+  aspect-ratio: 16 / 9;
+  img {
+    @include cover-image;
+  }
+}
+.article-text {
+  padding: 4vh 2vw;
+}

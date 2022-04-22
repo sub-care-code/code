@@ -1,0 +1,22 @@
+@use "../setting" as *;
+
+@mixin marginx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//セクションのbottom
+@mixin bottom-auto {
+  margin-bottom: 6rem;
+}
+
+//セクションのtop
+@mixin top-auto {
+  padding-top: 6rem;
+}
+
+// page-innerの余白
+@mixin page-inner {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}

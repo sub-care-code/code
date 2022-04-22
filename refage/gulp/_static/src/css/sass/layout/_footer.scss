@@ -1,0 +1,85 @@
+@use "../global" as *;
+
+.footer {
+  background-color: rgb(240, 240, 240);
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding-top: 5vh;
+    @include mq(lg) {
+      display: block;
+    }
+  }
+  &__area {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 3rem;
+    @include page-inner;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &::before,
+    &::after {
+      content: "";
+      width: 5vw;
+      height: 1px;
+      background-color: $color-orange;
+    }
+    &::before {
+      margin-right: 0.6em;
+    }
+    &::after {
+      margin-left: 0.6em;
+    }
+  }
+}
+
+.store {
+  margin-bottom: 3rem;
+  &__def {
+    display: flex;
+    flex-wrap: wrap;
+    @include mq(md) {
+      flex-direction: column;
+    }
+    &--tit {
+      flex-basis: 25%;
+      padding: 1rem;
+      display: flex;
+      text-align: center;
+      align-items: center;
+    }
+    &--date {
+      flex-basis: 75%;
+      padding: 1rem;
+    }
+  }
+}
+
+// googleマップの設定
+.google-map__wrap {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  iframe {
+    @include cover-image;
+  }
+}
+.wp-block-search .wp-block-search__label {
+  font-size: 2rem;
+}
+
+.copy_right {
+  background-color: $color-sub-orange;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1rem;
+}

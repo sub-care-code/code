@@ -1,0 +1,2300 @@
+@charset "UTF-8";
+/*
+** カラー
+*/
+/*
+** フォント
+*/
+/*
+**バックグラウンドカラー
+*/
+/*
+** ボックスシャドー
+*/
+/*
+** テキストシャドー
+*/
+/* コンテンツ・ページ幅 */
+/*
+** ブレークポイント 
+*/
+/*
+Theme Name:refage-aroma
+version:1.0.0
+Author:massu
+Author URI:https://refage-aroma.com
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+button[disabled],
+[type=button][disabled],
+[type=reset][disabled],
+[type=submit][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Misc */
+/* ============================================ */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Noto Serif JP", serif;
+  color: #555;
+  font-size: 1.6rem;
+  line-height: 1.85;
+  word-wrap: break-word;
+  letter-spacing: 0.2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-width {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-inner {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.site-tiltle,
+.section-title {
+  font-family: "Parisienne", cursive;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: clamp(4rem, 4.8387096774vw, 7rem);
+  color: #61c359;
+  padding-top: 6rem;
+}
+.section-title__wrap {
+  position: relative;
+}
+.section-title__bg {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(3.2rem, 5.6451612903vw, 7rem);
+  opacity: 0.08;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.sub-title {
+  font-size: clamp(2.4rem, 1.935483871vw, 3rem);
+  font-weight: bold;
+}
+
+.site-logo {
+  margin-left: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .site-logo {
+    margin-left: 0.6rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 70px;
+  max-height: 70px;
+}
+@media screen and (max-width: 768px) {
+  .header__wrap {
+    display: block;
+    line-height: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .g-nav {
+    display: none;
+    transition: 1s;
+  }
+  .g-nav.panelactive {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+.g-nav__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.g-nav__list li {
+  text-align: center;
+  line-height: 40px;
+}
+.g-nav__list li a {
+  display: block;
+  position: relative;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+.g-nav__list li a:hover {
+  color: #61c359;
+}
+.g-nav__list li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background-color: #61c359;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+.g-nav__list li a:hover::after {
+  transform: scale(1, 1);
+}
+.g-nav__list li.current-menu-item a {
+  color: #61c359;
+}
+.g-nav__list li.current-menu-item a::after {
+  transform: scale(1, 1);
+}
+@media screen and (max-width: 768px) {
+  .g-nav__list.panelactive {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 7vh 0;
+    transition: all 0.6s;
+  }
+}
+
+.h-nav {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .h-nav {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 4px;
+    z-index: 999;
+  }
+  .h-nav.active {
+    position: fixed;
+  }
+}
+.h-nav__btn {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #767676;
+}
+.h-nav__bar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  width: 60%;
+  height: 1px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.h-nav__bar.-top {
+  top: 20%;
+}
+.h-nav__bar.-top.active {
+  top: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+}
+.h-nav__bar.-bottom {
+  top: 80%;
+}
+.h-nav__bar.-bottom.active {
+  top: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.h-nav-midle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.h-nav-midle.active {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.circle-bg {
+  position: fixed;
+  z-index: 3;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #767676;
+  transform: scale(0);
+  right: -10px;
+  top: -10px;
+  transition: all 0.6s;
+}
+.circle-bg.active {
+  transform: scale(50);
+}
+
+.footer {
+  background-color: #f0f0f0;
+}
+.footer__wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding-top: 5vh;
+}
+@media screen and (max-width: 992px) {
+  .footer__wrap {
+    display: block;
+  }
+}
+.footer__area {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.footer__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer__title::before, .footer__title::after {
+  content: "";
+  width: 5vw;
+  height: 1px;
+  background-color: #fcaa00;
+}
+.footer__title::before {
+  margin-right: 0.6em;
+}
+.footer__title::after {
+  margin-left: 0.6em;
+}
+
+.store {
+  margin-bottom: 3rem;
+}
+.store__def {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .store__def {
+    flex-direction: column;
+  }
+}
+.store__def--tit {
+  flex-basis: 25%;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.store__def--date {
+  flex-basis: 75%;
+  padding: 1rem;
+}
+
+.google-map__wrap {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.google-map__wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.wp-block-search .wp-block-search__label {
+  font-size: 2rem;
+}
+
+.copy_right {
+  background-color: #feeabc;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1rem;
+}
+
+.fv {
+  position: relative;
+  background-image: url("img/fv.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 70px);
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+}
+.fv__bottom {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #767676;
+  padding: 1rem;
+  background-image: linear-gradient(60deg, #61c359 0%, #feeabc 100%);
+}
+.fv .site-tiltle {
+  font-size: clamp(4.4rem, 8.064516129vw, 10rem);
+  color: #ffffff;
+}
+.fv .site-lead {
+  font-size: clamp(2.2rem, 2.4193548387vw, 6rem);
+  text-align: center;
+  color: #ffffff;
+}
+
+/*
+** flexレイアウトの基本
+*/
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+/*
+** About-leadのレイアウト
+*/
+.about-lead {
+  position: relative;
+}
+.about-lead::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("img/info-bg-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+.about-lead__area {
+  flex-basis: 52%;
+}
+.about-lead__img {
+  background-image: url("img/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-basis: 44%;
+  min-height: 400px;
+  box-shadow: 15px 15px 0 #fcaa00;
+}
+.about-lead__text {
+  padding: 2rem 0;
+}
+
+/*
+** menuのレイアウト
+*/
+.menu {
+  margin-bottom: 6rem;
+}
+
+.l-menu__thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 70.3125%;
+  aspect-ratio: 320/225;
+  overflow: hidden;
+}
+.l-menu__thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.l-menu__lead {
+  padding: 1vw;
+  margin-bottom: 0.6rem;
+  box-shadow: 5px 0 10px #ccc;
+  text-align: center;
+}
+.l-menu__title {
+  font-size: clamp(1.4rem, 1.6129032258vw, 2.4rem);
+  font-weight: bold;
+  text-shadow: 5px 0 10px #ccc;
+}
+.l-menu__text {
+  color: #61c359;
+}
+
+/*
+** contactのレイアウト
+*/
+.contact {
+  position: relative;
+  background-color: rgba(97, 195, 89, 0.1);
+  padding-bottom: 5rem;
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("img/info-bg-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+.contact__wrap {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 6rem;
+}
+.contact__area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 30%;
+  background-color: #fff;
+  box-shadow: 15px 15px 0 #fcaa00;
+  padding: 1vw;
+}
+.contact__ask {
+  margin-bottom: 2rem;
+}
+
+/*
+** 営業日の表のレイアウト
+** 
+*/
+.contact__day {
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: scroll;
+}
+
+.sales {
+  border-collapse: collapse;
+  max-width: 700px;
+  width: 100%;
+  overflow-x: scroll;
+}
+.sales__lead {
+  position: relative;
+  left: -25%;
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .sales__lead {
+    display: block;
+  }
+}
+.sales__tit, .sales__date {
+  padding: 1.2rem 2rem;
+  text-align: center;
+  border: 2px solid #fcaa00;
+}
+.sales__tit {
+  background-color: #feeabc;
+}
+.sales__date {
+  background-color: #ffffff;
+}
+
+/*
+**お知らせのレイアウト
+*/
+.info__area {
+  max-width: 1440px;
+  width: 80vw;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6rem;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #767676;
+}
+@media screen and (max-width: 576px) {
+  .info__area {
+    width: 100%;
+  }
+}
+.info__wrap {
+  padding: 4vw 8vw;
+}
+.info__link {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  color: #767676;
+}
+@media screen and (max-width: 576px) {
+  .info__link {
+    flex-direction: column;
+  }
+}
+.info__link:hover {
+  background-color: #feeabc;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.info__tit {
+  flex-basis: 30%;
+  border-bottom: 1px solid #61c359;
+  padding: 1.6rem;
+}
+@media screen and (max-width: 576px) {
+  .info__tit {
+    border-bottom-color: #feeabc;
+  }
+}
+.info__date {
+  flex-basis: 70%;
+  border-bottom: 1px solid #61c359;
+  padding: 1.6rem;
+}
+
+.page__wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+.page__wrap.-search {
+  max-width: 1440px;
+}
+
+.has-white-background-color {
+  background-color: unset !important;
+}
+
+.entry-header {
+  position: relative;
+  margin-bottom: 6rem;
+}
+.entry-header__thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 37.5%;
+  aspect-ratio: 16/6;
+  overflow: hidden;
+}
+.entry-header__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.entry-header__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #767676;
+  font-size: clamp(4rem, 6.4516129032vw, 9rem);
+}
+
+.content-sub__title p {
+  font-size: clamp(2.4rem, 2.5806451613vw, 4rem) !important;
+}
+
+.p-section__title {
+  font-size: clamp(2.4rem, 2.5806451613vw, 4rem);
+  text-align: center;
+  color: #fcaa00;
+}
+.p-section__title.-access {
+  position: relative;
+  font-size: clamp(2rem, 2.2580645161vw, 3.2rem);
+  margin-bottom: 3rem;
+}
+.p-section__title.-access::before {
+  content: attr(data-en);
+  display: block;
+  font-size: clamp(1.4rem, 1.6129032258vw, 2.4rem);
+  font-family: "Parisienne", cursive;
+  color: #61c359;
+}
+.p-section__title.-access::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+  height: 1px;
+  background-color: #61c359;
+}
+
+.entry-content {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.entry-content__article {
+  max-width: 968px;
+  margin: auto;
+}
+
+.p-menu__content {
+  box-shadow: 2px 2px 4px #767676;
+  background-image: url("img/m-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-backdrop-filter: gray;
+          backdrop-filter: gray;
+  min-height: 350px;
+}
+.p-menu__content p {
+  padding-bottom: 2rem;
+}
+
+.circles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #61c359;
+  -webkit-animation: animate 20s linear infinite;
+          animation: animate 20s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 15%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 5%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 75%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 35%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 90%;
+  width: 110px;
+  height: 110px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 45s;
+          animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 5%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    transform: translateY(0) translateX(0deg);
+    opacity: 1;
+  }
+  50% {
+    background-color: rgba(252, 170, 0, 0.8);
+  }
+  100% {
+    transform: translateY(-1000px) translateX(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) translateX(0deg);
+    opacity: 1;
+  }
+  50% {
+    background-color: rgba(252, 170, 0, 0.8);
+  }
+  100% {
+    transform: translateY(-1000px) translateX(100px);
+    opacity: 0;
+  }
+}
+/*Snow Monkey Forms*/
+.snow-monkey-form {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px #767676;
+  padding: 5vw;
+}
+@media screen and (max-width: 576px) {
+  .snow-monkey-form {
+    padding: 5vw 0;
+  }
+}
+
+/*フォームの色などの設定*/
+.smf-form .smf-item .smf-text-control__control,
+.smf-form .smf-item .smf-textarea-control__control {
+  border-radius: 0;
+  border: 1px solid #767676;
+}
+
+/*フォームのhover時の設定*/
+.smf-form .smf-item .smf-text-control__control:hover,
+.smf-form .smf-item .smf-textarea-control__control:hover {
+  border-bottom: 1px solid #fcaa00;
+  background-color: rgba(26, 64, 95, 0.2);
+}
+
+/*active時の設定*/
+.smf-form .smf-item .smf-text-control__control:active,
+.smf-form .smf-item .smf-text-control__control:focus,
+.smf-form .smf-item .smf-text-control__control:focus-within,
+.smf-form .smf-item .smf-text-control__control[aria-selected=true],
+.smf-form .smf-item .smf-textarea-control__control:active,
+.smf-form .smf-item .smf-textarea-control__control:focus,
+.smf-form .smf-item .smf-textarea-control__control:focus-within,
+.smf-form .smf-item .smf-textarea-control__control[aria-selected=true] {
+  border: 1px solid #feeabc;
+}
+
+/*ボタンの設定*/
+.smf-action .smf-button-control__control {
+  background-color: #fcaa00;
+  background-image: none;
+  border: 1px solid #767676;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 1rem 4rem;
+  border-radius: 8px;
+}
+.smf-action .smf-button-control__control:hover {
+  color: #fcaa00;
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+
+/* ラジオボタンの配置設定 */
+.smf-form .smf-item .smf-radio-button-control {
+  align-items: center;
+}
+
+/* 必須項目の文字色を目立たせる */
+.smf-item__description {
+  color: #fcaa00;
+}
+
+.single .page__wrap h2 {
+  position: relative;
+  padding-left: 1vw;
+  padding-bottom: 1rem;
+  font-size: clamp(2.4rem, 1.935483871vw, 3rem);
+}
+.single .page__wrap h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-image: repeating-linear-gradient(45deg, #b4a983 0px, #b4a983 1px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%);
+  background-size: 8px 8px;
+}
+.single .page__wrap h3 {
+  position: relative;
+  background: #feeabc;
+  box-shadow: 0px 0px 0px 5px #feeabc;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  font-size: clamp(2.2rem, 0.1774193548vw, 2.6rem);
+}
+.single .page__wrap h3::after {
+  position: absolute;
+  content: "";
+  left: -7px;
+  top: -7px;
+  border-width: 0 0 15px 15px;
+  border-style: solid;
+  border-color: #fff #fff #fcaa00;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.single .page__wrap h4 {
+  position: relative;
+  padding: 0.2em 0.5em;
+  font-size: clamp(1.8rem, 0.1451612903vw, 2.2rem);
+}
+.single .page__wrap h4:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: linear-gradient(to right, #ffba73, #ffb2b2);
+}
+.single .page__wrap p {
+  padding: 2rem 2rem 0 2rem;
+  margin-bottom: 2rem;
+}
+.single-sns__wrap {
+  margin-top: 3rem;
+}
+
+.articles_area {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.archive-news__title {
+  font-size: 2rem;
+  color: #fcaa00;
+}
+
+.articles_wrap {
+  border: 1px solid #61c359;
+}
+
+.articles_thumbnail img {
+  width: 100%;
+}
+
+.articles_meta {
+  font-size: 1rem;
+  color: #767676;
+  text-align: center;
+}
+
+.articles_post-title {
+  padding: 1rem;
+}
+
+.access-top {
+  position: relative;
+  width: 100%;
+  padding-top: 66.6666666667%;
+  box-shadow: 2px 2px 4px #767676;
+}
+.access-top iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/*==================================================
+機能編 複数画像を並列に見せる
+===================================*/
+.slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 100%;
+  /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+.slider .slick-slide {
+  margin: 0 10px;
+}
+
+/*矢印の設定*/
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute;
+  /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #999;
+  /*矢印の色*/
+  border-right: 2px solid #999;
+  /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  /*ドットボタンのサイズ*/
+  height: 8px;
+  /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+  /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+  background: #e2a2b1;
+  /*ドットボタンの現在地表示の色*/
+}
+
+#particles-js {
+  position: absolute;
+  /*描画固定*/
+  z-index: -1;
+  /*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  background-color: #feeabc;
+}
+
+#wrapper {
+  position: relative;
+  /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 1;
+  /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width: 100%;
+  height: 100%;
+}
+
+.search__title {
+  font-size: clamp(2.4rem, 1.935483871vw, 3rem);
+  margin-bottom: 6rem;
+}
+.search__wrap {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 576px) {
+  .search__wrap {
+    padding: 2vw;
+  }
+}
+.search__index {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #767676;
+  padding: 2vw;
+  margin-bottom: 6rem;
+}
+.search__index .meta {
+  text-align: center;
+  color: #61c359;
+}
+.search__index .entry-cat {
+  text-align: center;
+}
+.search-post__title {
+  font-size: clamp(2.4rem, 1.935483871vw, 3rem);
+  text-align: center;
+}
+
+.articles_index_thumbnail {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 56.25%;
+  aspect-ratio: 16/9;
+}
+.articles_index_thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.article-text {
+  padding: 4vh 2vw;
+}
+
+.lead-btn {
+  position: relative;
+  text-align: center;
+}
+
+/*==================================================
+機能編 線から塗に変化（上から下）
+===================================*/
+/* ボタン共通設定 */
+.btn__anima {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  display: inline-block;
+  padding: 1.4rem 4rem;
+  color: #333;
+  border: 1px solid #fcaa00;
+  background-color: #feeabc;
+  border-radius: 8px;
+  outline: none;
+  /*はみ出す背景色を隠す*/
+  overflow: hidden;
+  z-index: 2;
+}
+.btn__anima:hover {
+  color: #ffffff;
+  border-color: transparent;
+  /*色の変化を遅らせる*/
+  transition-delay: 0.6s;
+}
+.btn__anima span {
+  display: block;
+  z-index: 2;
+}
+
+.bordertop span::after, .bordertop span::before {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  width: 1px;
+  height: 0;
+  /*線の形状*/
+  background: #fcaa00;
+  /*アニメーションの設定*/
+  transition: all 0.3s;
+}
+.bordertop span::before {
+  left: 0;
+  top: 0;
+}
+.bordertop span::after {
+  right: 0;
+  top: 0;
+}
+
+/*hoverをすると線が伸びる*/
+.bordertop:hover span::before,
+.bordertop:hover span::after {
+  height: 100%;
+}
+
+/*背景の設定*/
+.bordertop::before {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  /*背景の形状*/
+  width: 100%;
+  height: 0;
+  background: #fcaa00;
+  /*アニメーションの設定*/
+  transition: all 0.3s;
+}
+
+/*hoverをすると背景が伸びる*/
+.bordertop:hover::before {
+  height: 100%;
+  /*0.4秒遅れてアニメーション*/
+  transition-delay: 0.4s;
+}
+
+.insta__wrap {
+  text-align: center;
+}
+
+/* ボタン全体 */
+.flowbtn {
+  border-radius: 4px;
+  padding: 0.6rem;
+  position: relative;
+  display: inline-block;
+  width: 50vw;
+  max-width: 350px;
+  font-size: 2rem;
+  color: #fff !important;
+  margin-bottom: 5px;
+}
+
+/* Instagramアイコン位置 */
+.insta_btn .fa-instagram {
+  position: relative;
+  z-index: 1;
+}
+
+/* Instagram紫グラデ背景色 */
+.insta_btn {
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  overflow: hidden;
+}
+.insta_btn:before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -75px;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 80%);
+}
+.insta_btn span {
+  font-size: 14px;
+  position: relative;
+  left: 8px;
+  bottom: 2px;
+  transition: 0.6s;
+  display: inline-block;
+}
+.insta_btn:hover span {
+  transform: rotateX(360deg);
+  opacity: 0.6;
+  transition: 0.6s;
+}
+
+/*==================================================
+** テキストがほのかに光りながら出現
+===================================*/
+.glowAnime span {
+  opacity: 0;
+}
+
+.glowAnime.glow span {
+  -webkit-animation: glow_anime_on 1s ease-out forwards;
+          animation: glow_anime_on 1s ease-out forwards;
+}
+
+@-webkit-keyframes glow_anime_on {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 1px 2px 3px #808080;
+  }
+}
+
+@keyframes glow_anime_on {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 1px 2px 3px #808080;
+  }
+}
+/*==================================================
+** 丸が動いてスクロールを促す
+===================================*/
+/*スクロールダウン全体の場所*/
+.scrolldown {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 2;
+}
+.scrolldown span {
+  /*描画位置*/
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  /*テキストの形状*/
+  color: #eee;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+}
+.scrolldown:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  /*丸の形状*/
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #eee;
+  /*丸の動き1.6秒かけて透過し、永遠にループ*/
+  -webkit-animation: circlemove 1.6s ease-in-out infinite, cirlemovehide 1.6s ease-out infinite;
+          animation: circlemove 1.6s ease-in-out infinite, cirlemovehide 1.6s ease-out infinite;
+}
+.scrolldown:after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*線の形状*/
+  width: 2px;
+  height: 50px;
+  background: #eee;
+}
+
+/*下からの距離が変化して丸の全体が上から下に動く*/
+@-webkit-keyframes circlemove {
+  0% {
+    bottom: 45px;
+  }
+  100% {
+    bottom: -5px;
+  }
+}
+@keyframes circlemove {
+  0% {
+    bottom: 45px;
+  }
+  100% {
+    bottom: -5px;
+  }
+}
+/*上から下にかけて丸が透過→不透明→透過する*/
+@-webkit-keyframes cirlemovehide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cirlemovehide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*===========================================================*/
+/*  テキストの動き/
+/*===========================================================*/
+/*========= テキストが流れるように出現（左から右） ===============*/
+/*全共通*/
+.slide-in {
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 10px;
+  /*英語がはみ出るので見えるように余白追記*/
+}
+
+.slide-in_inner {
+  display: inline-block;
+}
+
+/*左右のアニメーション*/
+.leftAnime,
+.rightAnime {
+  opacity: 0;
+  /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+  -webkit-animation-name: slideText-100;
+          animation-name: slideText-100;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideText-100 {
+  from {
+    transform: translateX(-100%);
+    /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+@keyframes slideText-100 {
+  from {
+    transform: translateX(-100%);
+    /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+.slideAnimeRightLeft {
+  -webkit-animation-name: slideText100;
+          animation-name: slideText100;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideText100 {
+  from {
+    transform: translateX(100%);
+    /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+@keyframes slideText100 {
+  from {
+    transform: translateX(100%);
+    /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+/*========= テキストがじわっと出現 ===============*/
+.blur {
+  -webkit-animation-name: blurAnime;
+          animation-name: blurAnime;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes blurAnime {
+  from {
+    filter: blur(10px);
+    transform: scale(1.02);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes blurAnime {
+  from {
+    filter: blur(10px);
+    transform: scale(1.02);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.blurTrigger {
+  opacity: 0;
+}
+
+/*========= sectionの出現 ===============*/
+/* 4-1 ふわっ（その場で） */
+.fadeIn {
+  -webkit-animation-name: fadeInAnime;
+          animation-name: fadeInAnime;
+  -webkit-animation-duration: 2.4s;
+          animation-duration: 2.4s;
+  /*ゆっくり出現するため数値変更*/
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeInAnime {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*営業日の横スクロールの促し*/
+.scrollside {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 2;
+  /*下からの距離が変化して丸の全体が上から下に動く*/
+  /*上から下にかけて丸が透過→不透明→透過する*/
+}
+.scrollside span {
+  /*描画位置*/
+  position: absolute;
+  bottom: 10px;
+  /*テキストの形状*/
+  color: #767676;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+}
+.scrollside:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  top: -6px;
+  left: -4px;
+  /*丸の形状*/
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #767676;
+  /*丸の動き1.6秒かけて透過し、永遠にループ*/
+  -webkit-animation: circledownmove 1.6s ease-in-out infinite, cirlemoveside 1.6s ease-out infinite;
+          animation: circledownmove 1.6s ease-in-out infinite, cirlemoveside 1.6s ease-out infinite;
+}
+.scrollside:after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*線の形状*/
+  width: 50px;
+  height: 2px;
+  background: #767676;
+}
+@-webkit-keyframes circledownmove {
+  0% {
+    left: -5px;
+  }
+  100% {
+    left: 45px;
+  }
+}
+@keyframes circledownmove {
+  0% {
+    left: -5px;
+  }
+  100% {
+    left: 45px;
+  }
+}
+@-webkit-keyframes cirlemoveside {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cirlemoveside {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wp-block-search__input,
+.wp-block-search__button {
+  background-color: #ffffff;
+  max-width: 80%;
+  border-radius: 10px;
+  border: 2px solid #fcaa00;
+}
+.wp-block-search__input:hover,
+.wp-block-search__button:hover {
+  opacity: 0.7;
+}
+
+.pageMap {
+  padding-top: 3vh;
+  color: #767676;
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pageMap a {
+  color: #fcaa00;
+}
+.pageMap a:hover {
+  text-decoration: underline;
+}
+.pageMap li {
+  display: inline-block;
+  padding-right: 1vw;
+}
+
+#page-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+  opacity: 0;
+}
+#page-top.upMove {
+  -webkit-animation: upMove 0.5s forwards;
+          animation: upMove 0.5s forwards;
+}
+@-webkit-keyframes upMove {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes upMove {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#page-top.downMove {
+  -webkit-animation: downMove 0.5s forwards;
+          animation: downMove 0.5s forwards;
+}
+@-webkit-keyframes downMove {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+@keyframes downMove {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+#page-top a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcaa00;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.post-navigation {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 0.8em;
+}
+.post-navigation .nav-links {
+  display: table;
+  margin: 0 auto;
+  color: #ffffff;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  table-layout: fixed;
+  /*中の要素の幅を均等に*/
+  border-spacing: 10px;
+  word-break: break-all;
+}
+.post-navigation .nav-links a {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+.post-navigation .nav-links a:hover {
+  color: #fcaa00;
+  transition: 0.3s;
+}
+.post-navigation .nav-links .nav-previous,
+.post-navigation .nav-links .nav-next {
+  display: table-cell;
+  background-color: #fcaa00;
+  border-radius: 10px;
+  border: 1px solid #767676;
+}
+.post-navigation .nav-links .nav-previous:hover,
+.post-navigation .nav-links .nav-next:hover {
+  background-color: #ffffff;
+  transition: 0.3s;
+}
